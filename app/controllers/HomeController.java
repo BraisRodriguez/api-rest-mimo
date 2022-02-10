@@ -843,6 +843,96 @@ public class HomeController extends Controller {
 
     //lista recetas por usuario (por id)
 
+    public Result getListaRecetasUsuario(Http.Request request, String userId){
+
+
+        List<Receta> recetas = new ArrayList<Receta>();
+
+
+
+           Usuario usuario = Usuario.findUsuarioById(userId);
+
+
+        if(usuario==null)
+        {
+            ObjectNode result = Json.newObject();
+            Messages messages = messagesApi.preferred(request);
+            String error = messages.at("error_usuario_no_encontrado");
+            result.put("resultMessage", error);
+            return Results.notFound(result);
+        }
+
+//        recetas = usuario.getRecetas();
+//
+//        paginas  = (recetas.size()/10)+1;
+//
+//
+//        recetasPagina = recetas.subList(0, 9);
+//
+//        if( Integer.valueOf(page) > paginas)
+//        {
+//            ObjectNode result = Json.newObject();
+//            Messages messages = messagesApi.preferred(request);
+//            String error = messages.at("error_pagina_no_existe");
+//            result.put("resultMessage", error);
+//            return Results.badRequest(result);
+//        }
+//
+//
+//
+//        if (request.accepts("application/xml")) {
+//            Content content = views.xml.recetas.render(recetasPagina);
+//            return ok(content)
+//                    .withHeader("allRecepesListSize", recetas.size() + "")
+//                    .withHeader("pageSize", recetasPagina.size() + "")
+//                    .withHeader("page", page)
+//                    .as("application/xml");
+//        } else if (request.accepts("application/json")) {
+//
+//            JsonNode node = Json.toJson(recetasPagina);
+//
+//            return ok(node)
+//                    .withHeader("allRecepesListSize", recetas.size() + "")
+//                    .withHeader("pageSize", recetasPagina.size() + "")
+//                    .withHeader("page", page)
+//                    .as("application/json");
+//
+//        } else {
+//            ObjectNode result = Json.newObject();
+//            Messages messages = messagesApi.preferred(request);
+//            String error = messages.at("error_formato_no_soportado");
+//            result.put("resultMessage", error);
+//            return Results.status(406, result);
+//        }
+
+        recetas = usuario.getRecetas();
+
+
+
+
+        if (request.accepts("application/xml")) {
+            Content content = views.xml.recetas.render(recetas);
+            return ok(content)
+                    .as("application/xml");
+        } else if (request.accepts("application/json")) {
+
+            JsonNode node = Json.toJson(recetas);
+
+            return ok(node)
+                    .as("application/json");
+
+        } else {
+            ObjectNode result = Json.newObject();
+            Messages messages = messagesApi.preferred(request);
+            String error = messages.at("error_formato_no_soportado");
+            result.put("resultMessage", error);
+            return Results.status(406, result);
+        }
+
+
+
+    }
+
 
 
 

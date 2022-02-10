@@ -55,6 +55,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """ingredient/nameLiteral/""" + "$" + """ingredientName<[^/]+>""", """controllers.HomeController.getIngredienteByNameLiteral(request:Request, ingredientName:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """recepe/nameRelated/""" + "$" + """recepeName<[^/]+>""", """controllers.HomeController.getListRecetasByNameSelected(request:Request, recepeName:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """recepe/nameLiteral/""" + "$" + """recepeName<[^/]+>""", """controllers.HomeController.getListRecetaByNameLiteral(request:Request, recepeName:String)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user/recepes/""" + "$" + """userId<[^/]+>""", """controllers.HomeController.getListaRecetasUsuario(request:Request, userId:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -384,11 +385,31 @@ GET     /hola/:variable                           controllers.HomeController.ind
     )
   )
 
+  // @LINE:28
+  private[this] lazy val controllers_HomeController_getListaRecetasUsuario16_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("user/recepes/"), DynamicPart("userId", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_HomeController_getListaRecetasUsuario16_invoker = createInvoker(
+    
+    (req:play.mvc.Http.Request) =>
+      HomeController_1.getListaRecetasUsuario(fakeValue[play.mvc.Http.Request], fakeValue[String]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "getListaRecetasUsuario",
+      Seq(classOf[play.mvc.Http.Request], classOf[String]),
+      "GET",
+      this.prefix + """user/recepes/""" + "$" + """userId<[^/]+>""",
+      """""",
+      Seq()
+    )
+  )
+
   // @LINE:32
-  private[this] lazy val controllers_Assets_versioned16_route = Route("GET",
+  private[this] lazy val controllers_Assets_versioned17_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned16_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned17_invoker = createInvoker(
     Assets_0.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -517,10 +538,17 @@ GET     /hola/:variable                           controllers.HomeController.ind
           req => HomeController_1.getListRecetaByNameLiteral(req, recepeName))
       }
   
+    // @LINE:28
+    case controllers_HomeController_getListaRecetasUsuario16_route(params@_) =>
+      call(params.fromPath[String]("userId", None)) { (userId) =>
+        controllers_HomeController_getListaRecetasUsuario16_invoker.call(
+          req => HomeController_1.getListaRecetasUsuario(req, userId))
+      }
+  
     // @LINE:32
-    case controllers_Assets_versioned16_route(params@_) =>
+    case controllers_Assets_versioned17_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned16_invoker.call(Assets_0.versioned(path, file))
+        controllers_Assets_versioned17_invoker.call(Assets_0.versioned(path, file))
       }
   }
 }

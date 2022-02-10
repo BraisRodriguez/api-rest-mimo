@@ -25,7 +25,7 @@ GET     /ingredient/nameLiteral/:ingredientName      controllers.HomeController.
 
 GET     /recepe/nameRelated/:recepeName      controllers.HomeController.getListRecetasByNameSelected(request: Request, recepeName)
 GET     /recepe/nameLiteral/:recepeName      controllers.HomeController.getListRecetaByNameLiteral(request: Request, recepeName)
-
+GET     /user/recepes/:userId                controllers.HomeController.getListaRecetasUsuario(request: Request, userId)
 
 
 # Map static resources from the /public folder to the /assets URL path

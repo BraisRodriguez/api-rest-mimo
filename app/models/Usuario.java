@@ -153,6 +153,8 @@ public class Usuario extends Model {
                 .findList();
     }
 
+
+
     public static Usuario findUsuarioById(String id)
     {
         return finder.byId(Long.valueOf(id));

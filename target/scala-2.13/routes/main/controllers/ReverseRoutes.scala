@@ -29,6 +29,12 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "ingredient/nameRelated/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("ingredientName", ingredientName)))
     }
   
+    // @LINE:28
+    def getListaRecetasUsuario(userId:String): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "user/recepes/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("userId", userId)))
+    }
+  
     // @LINE:21
     def deleteUser(userId:String): Call = {
       

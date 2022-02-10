@@ -17,3 +17,4 @@ error_no_se_encientran_ingredientes_con_ese_nombre=can´t find ingredients with 
 error_no_se_encientran_ingredientes_con_ese_nombre=can´t find recepes with that name in that name context
 error_no_se_encuentra_ingrediente_con_ese_nombre_literal = can´t find ingredient with that name
 error_no_se_encuentra_receta_con_ese_nombre_literal = can´t find recepe with that name
+error_pagina_no_existe = this page doesn´t exist in this list

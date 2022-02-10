@@ -38,6 +38,16 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:28
+    def getListaRecetasUsuario: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.getListaRecetasUsuario",
+      """
+        function(userId0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "user/recepes/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("userId", userId0))})
+        }
+      """
+    )
+  
     // @LINE:21
     def deleteUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.deleteUser",
