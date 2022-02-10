@@ -17,7 +17,7 @@ public class RecetaData {
 
 
 
-    @Constraints.Required(message = "mdmdmd")
+
     private String nombreReceta;
 
     private String descripcionReceta;
