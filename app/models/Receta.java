@@ -185,8 +185,24 @@ public class Receta extends Model {
                 .findList();
     }
 
+    public static List<Receta> findListaRecetasByNombrePage(String nombre, String page)
+    {
+        int pagina = Integer.valueOf(page);
+
+        int rows = 10*(pagina-1);
+
+        return finder.query()
+                .where()
+                .isNotNull("idReceta")
+                .orderBy("nombreReceta")
+                .setMaxRows(10)
+                .setFirstRow(rows)
+                .like("nombreReceta", "%"+nombre+"%").findList();
+    }
+
     public static List<Receta> findListaRecetasByNombre(String nombre)
     {
+
         return finder.query()
                 .where()
                 .like("nombreReceta", "%"+nombre+"%").findList();

@@ -15,7 +15,7 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:7
   HomeController_1: controllers.HomeController,
-  // @LINE:30
+  // @LINE:32
   Assets_0: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -24,7 +24,7 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:7
     HomeController_1: controllers.HomeController,
-    // @LINE:30
+    // @LINE:32
     Assets_0: controllers.Assets
   ) = this(errorHandler, HomeController_1, Assets_0, "/")
 
@@ -52,7 +52,9 @@ class Routes(
     ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """ingredient/""" + "$" + """ingredientId<[^/]+>""", """controllers.HomeController.deleteIngredient(request:Request, ingredientId:String)"""),
     ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user/""" + "$" + """userId<[^/]+>""", """controllers.HomeController.deleteUser(request:Request, userId:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """ingredient/nameRelated/""" + "$" + """ingredientName<[^/]+>""", """controllers.HomeController.getListIngredientesByNameSelected(request:Request, ingredientName:String)"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """ingredient/nameLiteral/""" + "$" + """ingredientName<[^/]+>""", """controllers.HomeController.getIngredientesByNameLiteral(request:Request, ingredientName:String)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """ingredient/nameLiteral/""" + "$" + """ingredientName<[^/]+>""", """controllers.HomeController.getIngredienteByNameLiteral(request:Request, ingredientName:String)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """recepe/nameRelated/""" + "$" + """recepeName<[^/]+>""", """controllers.HomeController.getListRecetasByNameSelected(request:Request, recepeName:String)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """recepe/nameLiteral/""" + "$" + """recepeName<[^/]+>""", """controllers.HomeController.getListRecetaByNameLiteral(request:Request, recepeName:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -323,17 +325,17 @@ GET     /hola/:variable                           controllers.HomeController.ind
   )
 
   // @LINE:24
-  private[this] lazy val controllers_HomeController_getIngredientesByNameLiteral13_route = Route("GET",
+  private[this] lazy val controllers_HomeController_getIngredienteByNameLiteral13_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("ingredient/nameLiteral/"), DynamicPart("ingredientName", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_HomeController_getIngredientesByNameLiteral13_invoker = createInvoker(
+  private[this] lazy val controllers_HomeController_getIngredienteByNameLiteral13_invoker = createInvoker(
     
     (req:play.mvc.Http.Request) =>
-      HomeController_1.getIngredientesByNameLiteral(fakeValue[play.mvc.Http.Request], fakeValue[String]),
+      HomeController_1.getIngredienteByNameLiteral(fakeValue[play.mvc.Http.Request], fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
-      "getIngredientesByNameLiteral",
+      "getIngredienteByNameLiteral",
       Seq(classOf[play.mvc.Http.Request], classOf[String]),
       "GET",
       this.prefix + """ingredient/nameLiteral/""" + "$" + """ingredientName<[^/]+>""",
@@ -342,11 +344,51 @@ GET     /hola/:variable                           controllers.HomeController.ind
     )
   )
 
-  // @LINE:30
-  private[this] lazy val controllers_Assets_versioned14_route = Route("GET",
+  // @LINE:26
+  private[this] lazy val controllers_HomeController_getListRecetasByNameSelected14_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("recepe/nameRelated/"), DynamicPart("recepeName", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_HomeController_getListRecetasByNameSelected14_invoker = createInvoker(
+    
+    (req:play.mvc.Http.Request) =>
+      HomeController_1.getListRecetasByNameSelected(fakeValue[play.mvc.Http.Request], fakeValue[String]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "getListRecetasByNameSelected",
+      Seq(classOf[play.mvc.Http.Request], classOf[String]),
+      "GET",
+      this.prefix + """recepe/nameRelated/""" + "$" + """recepeName<[^/]+>""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:27
+  private[this] lazy val controllers_HomeController_getListRecetaByNameLiteral15_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("recepe/nameLiteral/"), DynamicPart("recepeName", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_HomeController_getListRecetaByNameLiteral15_invoker = createInvoker(
+    
+    (req:play.mvc.Http.Request) =>
+      HomeController_1.getListRecetaByNameLiteral(fakeValue[play.mvc.Http.Request], fakeValue[String]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "getListRecetaByNameLiteral",
+      Seq(classOf[play.mvc.Http.Request], classOf[String]),
+      "GET",
+      this.prefix + """recepe/nameLiteral/""" + "$" + """recepeName<[^/]+>""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:32
+  private[this] lazy val controllers_Assets_versioned16_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned14_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned16_invoker = createInvoker(
     Assets_0.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -455,16 +497,30 @@ GET     /hola/:variable                           controllers.HomeController.ind
       }
   
     // @LINE:24
-    case controllers_HomeController_getIngredientesByNameLiteral13_route(params@_) =>
+    case controllers_HomeController_getIngredienteByNameLiteral13_route(params@_) =>
       call(params.fromPath[String]("ingredientName", None)) { (ingredientName) =>
-        controllers_HomeController_getIngredientesByNameLiteral13_invoker.call(
-          req => HomeController_1.getIngredientesByNameLiteral(req, ingredientName))
+        controllers_HomeController_getIngredienteByNameLiteral13_invoker.call(
+          req => HomeController_1.getIngredienteByNameLiteral(req, ingredientName))
       }
   
-    // @LINE:30
-    case controllers_Assets_versioned14_route(params@_) =>
+    // @LINE:26
+    case controllers_HomeController_getListRecetasByNameSelected14_route(params@_) =>
+      call(params.fromPath[String]("recepeName", None)) { (recepeName) =>
+        controllers_HomeController_getListRecetasByNameSelected14_invoker.call(
+          req => HomeController_1.getListRecetasByNameSelected(req, recepeName))
+      }
+  
+    // @LINE:27
+    case controllers_HomeController_getListRecetaByNameLiteral15_route(params@_) =>
+      call(params.fromPath[String]("recepeName", None)) { (recepeName) =>
+        controllers_HomeController_getListRecetaByNameLiteral15_invoker.call(
+          req => HomeController_1.getListRecetaByNameLiteral(req, recepeName))
+      }
+  
+    // @LINE:32
+    case controllers_Assets_versioned16_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned14_invoker.call(Assets_0.versioned(path, file))
+        controllers_Assets_versioned16_invoker.call(Assets_0.versioned(path, file))
       }
   }
 }

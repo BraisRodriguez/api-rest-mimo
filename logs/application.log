@@ -1,24 +1,134 @@
-2022-02-10 16:04:57,434 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-9 - Database [default] initialized
-2022-02-10 16:04:57,442 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-9 - Creating Pool for datasource 'default'
-2022-02-10 16:05:04,376 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-9 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2022-02-10 16:29:53,136 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-4 - Database [default] initialized
+2022-02-10 16:29:53,151 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
+2022-02-10 16:29:56,091 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-4 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2022-02-10 16:05:04,658 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-9 - Application started (Dev) (no global state)
-2022-02-10 16:16:02,357 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-3 - Shutting down connection pool.
-2022-02-10 16:16:03,199 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-6 - Database [default] initialized
-2022-02-10 16:16:03,200 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-6 - Creating Pool for datasource 'default'
-2022-02-10 16:16:03,395 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-6 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2022-02-10 16:29:56,772 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-4 - Application started (Dev) (no global state)
+2022-02-10 17:12:23,262 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-1 housekeeper - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m29s443ms).
+2022-02-10 17:32:00,471 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-4 - Shutting down connection pool.
+2022-02-10 17:32:01,318 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-15 - Database [default] initialized
+2022-02-10 17:32:01,318 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-15 - Creating Pool for datasource 'default'
+2022-02-10 17:32:01,465 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-15 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2022-02-10 16:16:03,420 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-6 - Application started (Dev) (no global state)
-2022-02-10 16:17:09,252 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in pool-12-thread-3 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 35000 milliseconds timeout
-2022-02-10 16:17:09,253 [INFO] from play.core.server.AkkaHttpServer in pool-12-thread-3 - Stopping Akka HTTP server...
-2022-02-10 16:17:09,257 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-5 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
-2022-02-10 16:17:09,293 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-4 - Shutting down connection pool.
-2022-02-10 16:17:09,481 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-20 - Running provided shutdown stop hooks
+2022-02-10 17:32:01,500 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-15 - Application started (Dev) (no global state)
+2022-02-10 17:32:01,617 [ERROR] from play.api.http.DefaultHttpErrorHandler in application-akka.actor.default-dispatcher-4 - 
+
+! @7mjckik1n - Internal server error, for (GET) [/ingredient/nameRelated/ingre?page=1] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[PersistenceException: Query threw SQLException:Columna "NOMBRERECETA" no encontrada
+Column "NOMBRERECETA" not found; SQL statement:
+select t0.id_ingrediente, t0.nombre_ingrediente, t0.version, t0.when_created, t0.when_modified from ingrediente t0 where t0.id_ingrediente is not null and t0.nombre_ingrediente like ? escape''  order by nombreReceta limit 10 [42122-200] Bind values:[null] Query was:select t0.id_ingrediente, t0.nombre_ingrediente, t0.version, t0.when_created, t0.when_modified from ingrediente t0 where t0.id_ingrediente is not null and t0.nombre_ingrediente like ? escape''  order by nombreReceta limit 10]]
+	at play.api.http.HttpErrorHandlerExceptions$.$anonfun$convertToPlayException$2(HttpErrorHandler.scala:381)
+	at scala.Option.map(Option.scala:242)
+	at play.api.http.HttpErrorHandlerExceptions$.convertToPlayException(HttpErrorHandler.scala:380)
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:373)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:264)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:430)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:422)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:454)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: javax.persistence.PersistenceException: Query threw SQLException:Columna "NOMBRERECETA" no encontrada
+Column "NOMBRERECETA" not found; SQL statement:
+select t0.id_ingrediente, t0.nombre_ingrediente, t0.version, t0.when_created, t0.when_modified from ingrediente t0 where t0.id_ingrediente is not null and t0.nombre_ingrediente like ? escape''  order by nombreReceta limit 10 [42122-200] Bind values:[null] Query was:select t0.id_ingrediente, t0.nombre_ingrediente, t0.version, t0.when_created, t0.when_modified from ingrediente t0 where t0.id_ingrediente is not null and t0.nombre_ingrediente like ? escape''  order by nombreReceta limit 10
+	at io.ebean.config.dbplatform.SqlCodeTranslator.translate(SqlCodeTranslator.java:55)
+	at io.ebean.config.dbplatform.DatabasePlatform.translate(DatabasePlatform.java:231)
+	at io.ebeaninternal.server.query.CQueryEngine.translate(CQueryEngine.java:145)
+	at io.ebeaninternal.server.query.DefaultOrmQueryEngine.translate(DefaultOrmQueryEngine.java:43)
+	at io.ebeaninternal.server.core.OrmQueryRequest.translate(OrmQueryRequest.java:106)
+	at io.ebeaninternal.server.query.CQuery.createPersistenceException(CQuery.java:692)
+	at io.ebeaninternal.server.query.CQueryEngine.findMany(CQueryEngine.java:396)
+	at io.ebeaninternal.server.query.DefaultOrmQueryEngine.findMany(DefaultOrmQueryEngine.java:131)
+	at io.ebeaninternal.server.core.OrmQueryRequest.findList(OrmQueryRequest.java:470)
+	at io.ebeaninternal.server.core.DefaultServer.findList(DefaultServer.java:1536)
+	at io.ebeaninternal.server.core.DefaultServer.findList(DefaultServer.java:1515)
+	at io.ebeaninternal.server.querydefn.DefaultOrmQuery.findList(DefaultOrmQuery.java:1604)
+	at io.ebeaninternal.server.expression.DefaultExpressionList.findList(DefaultExpressionList.java:451)
+	at models.Ingrediente.findListaIngredientesByNombrePage(Ingrediente.java:147)
+	at controllers.HomeController.getListIngredientesByNameSelected(HomeController.java:688)
+	at router.Routes$$anonfun$routes$1.$anonfun$applyOrElse$39(Routes.scala:496)
+	at play.core.routing.HandlerInvokerFactory$$anon$8.resultCall(HandlerInvoker.scala:150)
+	at play.core.routing.HandlerInvokerFactory$$anon$8.resultCall(HandlerInvoker.scala:149)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$3$$anon$4$$anon$5.invocation(HandlerInvoker.scala:115)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:119)
+	at play.http.DefaultActionCreator$1.call(DefaultActionCreator.java:33)
+	at play.core.j.JavaAction.$anonfun$apply$8(JavaAction.scala:175)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:672)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:431)
+	at play.core.j.HttpExecutionContext.$anonfun$execute$1(HttpExecutionContext.scala:64)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:59)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:393)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:302)
+	at scala.concurrent.impl.Promise$DefaultPromise.dispatchOrAddCallbacks(Promise.scala:276)
+	at scala.concurrent.impl.Promise$DefaultPromise.map(Promise.scala:146)
+	at scala.concurrent.Future$.apply(Future.scala:672)
+	at play.core.j.JavaAction.apply(JavaAction.scala:176)
+	at play.api.mvc.Action.$anonfun$apply$4(Action.scala:82)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:434)
+	... 12 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "NOMBRERECETA" no encontrada
+Column "NOMBRERECETA" not found; SQL statement:
+select t0.id_ingrediente, t0.nombre_ingrediente, t0.version, t0.when_created, t0.when_modified from ingrediente t0 where t0.id_ingrediente is not null and t0.nombre_ingrediente like ? escape''  order by nombreReceta limit 10 [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at io.ebeaninternal.server.query.CQuery.prepareResultSet(CQuery.java:357)
+	at io.ebeaninternal.server.query.CQuery.prepareBindExecuteQueryWithOption(CQuery.java:325)
+	at io.ebeaninternal.server.query.CQuery.prepareBindExecuteQuery(CQuery.java:321)
+	at io.ebeaninternal.server.query.CQueryEngine.findMany(CQueryEngine.java:369)
+	... 40 common frames omitted
+2022-02-10 17:33:13,892 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-2 - Shutting down connection pool.
+2022-02-10 17:33:14,665 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-26 - Database [default] initialized
+2022-02-10 17:33:14,665 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-26 - Creating Pool for datasource 'default'
+2022-02-10 17:33:14,957 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-26 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-02-10 17:33:14,988 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-26 - Application started (Dev) (no global state)
+2022-02-10 17:45:35,876 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-3 - Shutting down connection pool.
+2022-02-10 17:45:36,411 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-24 - Database [default] initialized
+2022-02-10 17:45:36,412 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-24 - Creating Pool for datasource 'default'
+2022-02-10 17:45:36,594 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-24 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-02-10 17:45:36,631 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-24 - Application started (Dev) (no global state)
+2022-02-10 17:46:42,722 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in pool-13-thread-1 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 35000 milliseconds timeout
+2022-02-10 17:46:42,723 [INFO] from play.core.server.AkkaHttpServer in pool-13-thread-1 - Stopping Akka HTTP server...
+2022-02-10 17:46:42,726 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-31 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2022-02-10 17:46:42,761 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-3 - Shutting down connection pool.
+2022-02-10 17:46:42,915 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-31 - Running provided shutdown stop hooks

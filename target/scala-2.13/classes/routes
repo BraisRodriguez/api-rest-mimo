@@ -21,8 +21,10 @@ DELETE  /ingredient/:ingredientId      controllers.HomeController.deleteIngredie
 DELETE  /user/:userId      controllers.HomeController.deleteUser(request: Request, userId)
 
 GET     /ingredient/nameRelated/:ingredientName      controllers.HomeController.getListIngredientesByNameSelected(request: Request, ingredientName)
-GET     /ingredient/nameLiteral/:ingredientName      controllers.HomeController.getIngredientesByNameLiteral(request: Request, ingredientName)
+GET     /ingredient/nameLiteral/:ingredientName      controllers.HomeController.getIngredienteByNameLiteral(request: Request, ingredientName)
 
+GET     /recepe/nameRelated/:recepeName      controllers.HomeController.getListRecetasByNameSelected(request: Request, recepeName)
+GET     /recepe/nameLiteral/:recepeName      controllers.HomeController.getListRecetaByNameLiteral(request: Request, recepeName)
 
 
 

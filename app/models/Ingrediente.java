@@ -131,12 +131,33 @@ public class Ingrediente extends Model {
         return finder.byId(id);
     }
 
+    public static List<Ingrediente> findListaIngredientesByNombrePage(String nombre, String page)
+    {
+        int pagina = Integer.valueOf(page);
+
+        int rows = 10*(pagina-1);
+
+
+        return finder.query()
+                .where()
+                .isNotNull("idIngrediente")
+                .orderBy("nombreIngrediente")
+                .setMaxRows(10)
+                .setFirstRow(rows)
+                .like("nombreIngrediente", "%"+nombre+"%").findList();
+    }
+
     public static List<Ingrediente> findListaIngredientesByNombre(String nombre)
     {
+
+
+
         return finder.query()
                 .where()
                 .like("nombreIngrediente", "%"+nombre+"%").findList();
     }
+
+
     public static Ingrediente findIngredienteByName(String nombre)
     {
         return finder.query()

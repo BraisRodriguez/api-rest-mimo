@@ -59,7 +59,7 @@ public class HomeController extends Controller {
         if (request.accepts("application/xml")) {
             Content content = views.xml.recetas.render(allRecetasPages);
             return ok(content)
-                    .withHeader("allRecepesSize", allRecetas.size() + "")
+                    .withHeader("allRecepesListSize", allRecetas.size() + "")
                     .withHeader("pageSize", allRecetasPages.size() + "")
                     .withHeader("page", page)
                     .as("application/xml");
@@ -68,7 +68,7 @@ public class HomeController extends Controller {
             JsonNode result = Json.toJson(allRecetasPages);
 
             return ok(result)
-                    .withHeader("allRecepesSize", allRecetas.size() + "")
+                    .withHeader("allRecepesListSize", allRecetas.size() + "")
                     .withHeader("pageSize", allRecetasPages.size() + "")
                     .withHeader("page", page)
                     .as("application/json");
@@ -103,7 +103,7 @@ public class HomeController extends Controller {
         if (request.accepts("application/xml")) {
             Content content = views.xml.ingredientes.render(allIngredientesPages);
             return ok(content)
-                    .withHeader("allRecepesSize", allIngredients.size() + "")
+                    .withHeader("allIngredientsListSize", allIngredients.size() + "")
                     .withHeader("pageSize", allIngredientesPages.size() + "")
                     .withHeader("page", page)
                     .as("application/xml");
@@ -112,7 +112,7 @@ public class HomeController extends Controller {
             JsonNode result = Json.toJson(allIngredientesPages);
 
             return ok(result)
-                    .withHeader("allRecepesSize", allIngredients.size() + "")
+                    .withHeader("allIngredientsListSize", allIngredients.size() + "")
                     .withHeader("pageSize", allIngredientesPages.size() + "")
                     .withHeader("page", page)
                     .as("application/json");
@@ -149,7 +149,7 @@ public class HomeController extends Controller {
         if (request.accepts("application/xml")) {
             Content content = views.xml.usuarios.render(allUsuariosPages);
             return ok(content)
-                    .withHeader("allRecepesSize", allUsuarios.size() + "")
+                    .withHeader("allUsersListSize", allUsuarios.size() + "")
                     .withHeader("pageSize", allUsuariosPages.size() + "")
                     .withHeader("page", page)
                     .as("application/xml");
@@ -158,7 +158,7 @@ public class HomeController extends Controller {
             JsonNode result = Json.toJson(allUsuariosPages);
 
             return ok(result)
-                    .withHeader("allRecepesSize", allUsuarios.size() + "")
+                    .withHeader("allUsersListSize", allUsuarios.size() + "")
                     .withHeader("pageSize", allUsuariosPages.size() + "")
                     .withHeader("page", page)
                     .as("application/json");
@@ -673,9 +673,21 @@ public class HomeController extends Controller {
 
     public Result getListIngredientesByNameSelected(Http.Request request, String ingredientName) {
 
-        List<Ingrediente> listaIngredientes = Ingrediente.findListaIngredientesByNombre(ingredientName);
+        String page = request.queryString("page").orElse("1");
+        if(Integer.valueOf(page)<=0)
+        {
+            ObjectNode result = Json.newObject();
+            Messages messages = messagesApi.preferred(request);
+            String error = messages.at("error_numero_pagina_menor_0");
+            result.put("resultMessage", error);
+            return Results.badRequest(result);
 
-        if(listaIngredientes.size()==0)
+        }
+
+        List<Ingrediente> listaIngredientestotal = Ingrediente.findListaIngredientesByNombre(ingredientName);
+        List<Ingrediente> listaIngredientesPages = Ingrediente.findListaIngredientesByNombrePage(ingredientName, page);
+
+        if(listaIngredientesPages.size()==0)
         {
             ObjectNode result = Json.newObject();
             result.put("resultMessage", "error_no_se_encientran_ingredientes_con_ese_nombre");
@@ -683,14 +695,20 @@ public class HomeController extends Controller {
         }
 
         if (request.accepts("application/xml")) {
-            Content content = views.xml.ingredientes.render(listaIngredientes);
+            Content content = views.xml.ingredientes.render(listaIngredientesPages);
             return ok(content)
+                    .withHeader("allIngredientsListSize", listaIngredientestotal.size() + "")
+                    .withHeader("pageSize", listaIngredientesPages.size() + "")
+                    .withHeader("page", page)
                     .as("application/xml");
         } else if (request.accepts("application/json")) {
 
-            JsonNode node = Json.toJson(listaIngredientes);
+            JsonNode node = Json.toJson(listaIngredientesPages);
 
             return ok(node)
+                    .withHeader("allIngredientsListSize", listaIngredientestotal.size() + "")
+                    .withHeader("pageSize", listaIngredientesPages.size() + "")
+                    .withHeader("page", page)
                     .as("application/json");
 
         } else {
@@ -703,7 +721,7 @@ public class HomeController extends Controller {
 
     }
 
-    public Result getIngredientesByNameLiteral(Http.Request request, String ingredientName) {
+    public Result getIngredienteByNameLiteral(Http.Request request, String ingredientName) {
 
 
         Ingrediente ingrediente = Ingrediente.findIngredienteByName(ingredientName);
@@ -738,11 +756,23 @@ public class HomeController extends Controller {
 
     }
 
-    public Result getListRecetasByNameSelected(Http.Request request, String recetaName){
+    public Result getListRecetasByNameSelected(Http.Request request, String recepeName){
 
-        List<Receta> listaRecetas = Receta.findListaRecetasByNombre(recetaName);
+        String page = request.queryString("page").orElse("1");
+        if(Integer.valueOf(page)<=0)
+        {
+            ObjectNode result = Json.newObject();
+            Messages messages = messagesApi.preferred(request);
+            String error = messages.at("error_numero_pagina_menor_0");
+            result.put("resultMessage", error);
+            return Results.badRequest(result);
 
-        if(listaRecetas.size()==0)
+        }
+        List<Receta> listaRecetastotal = Receta.findListaRecetasByNombre(recepeName);
+
+        List<Receta> listaRecetasPages = Receta.findListaRecetasByNombrePage(recepeName, page);
+
+        if(listaRecetasPages.size()==0)
         {
             ObjectNode result = Json.newObject();
             Messages messages = messagesApi.preferred(request);
@@ -752,14 +782,20 @@ public class HomeController extends Controller {
         }
 
         if (request.accepts("application/xml")) {
-            Content content = views.xml.recetas.render(listaRecetas);
+            Content content = views.xml.recetas.render(listaRecetasPages);
             return ok(content)
+                    .withHeader("allRecepesListSize", listaRecetastotal.size() + "")
+                    .withHeader("pageSize", listaRecetasPages.size() + "")
+                    .withHeader("page", page)
                     .as("application/xml");
         } else if (request.accepts("application/json")) {
 
-            JsonNode node = Json.toJson(listaRecetas);
+            JsonNode node = Json.toJson(listaRecetasPages);
 
             return ok(node)
+                    .withHeader("allRecepesListSize", listaRecetastotal.size() + "")
+                    .withHeader("pageSize", listaRecetasPages.size() + "")
+                    .withHeader("page", page)
                     .as("application/json");
 
         } else {
@@ -771,9 +807,9 @@ public class HomeController extends Controller {
         }
     }
 
-    public Result getListRecetasByNameLiteral(Http.Request request, String recetaName) {
+    public Result getListRecetaByNameLiteral(Http.Request request, String recepeName) {
 
-        Receta receta = Receta.findRecetaByName(recetaName);
+        Receta receta = Receta.findRecetaByName(recepeName);
 
         if(receta == null)
         {

@@ -48,16 +48,6 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:24
-    def getIngredientesByNameLiteral: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.getIngredientesByNameLiteral",
-      """
-        function(ingredientName0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "ingredient/nameLiteral/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("ingredientName", ingredientName0))})
-        }
-      """
-    )
-  
     // @LINE:12
     def getOneIngredient: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.getOneIngredient",
@@ -138,12 +128,42 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:24
+    def getIngredienteByNameLiteral: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.getIngredienteByNameLiteral",
+      """
+        function(ingredientName0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "ingredient/nameLiteral/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("ingredientName", ingredientName0))})
+        }
+      """
+    )
+  
+    // @LINE:27
+    def getListRecetaByNameLiteral: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.getListRecetaByNameLiteral",
+      """
+        function(recepeName0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "recepe/nameLiteral/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("recepeName", recepeName0))})
+        }
+      """
+    )
+  
     // @LINE:15
     def crearRecepe: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.crearRecepe",
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "recepes"})
+        }
+      """
+    )
+  
+    // @LINE:26
+    def getListRecetasByNameSelected: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.getListRecetasByNameSelected",
+      """
+        function(recepeName0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "recepe/nameRelated/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("recepeName", recepeName0))})
         }
       """
     )
@@ -160,7 +180,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:30
+  // @LINE:32
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -168,7 +188,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:30
+    // @LINE:32
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
