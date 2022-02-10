@@ -1,0 +1,7 @@
+@(listaUsuarios : List[Usuario])
+<listaUsuarios>
+    @for(variable <- listaUsuarios){
+
+    @_mi_parcialUsuario(variable)
+    }
+</listaUsuarios>

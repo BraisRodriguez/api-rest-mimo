@@ -1,0 +1,7 @@
+@(usuario:Usuario)
+<usuario>
+    <idUsuario>@(usuario.getIdUsuario())</idUsuario>
+    <nombreUsuario>@(usuario.getNombreUsuario())</nombreUsuario>
+    <correoUsuario>@(usuario.getCorreoUsuario())</correoUsuario>
+    @recetas2(usuario.getRecetas())
+</usuario>

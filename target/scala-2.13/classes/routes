@@ -1,0 +1,30 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+#GET     /hola/:variable                           controllers.HomeController.index(variable)
+GET     /recepes               controllers.HomeController.getAllRecepes(request: Request)
+GET     /ingredients               controllers.HomeController.getAllIngredients(request: Request)
+GET     /users               controllers.HomeController.getAllUsers(request: Request)
+
+GET     /recepe/:recepeId      controllers.HomeController.getOneRecepe(request: Request, recepeId)
+GET     /ingredient/:ingredientId      controllers.HomeController.getOneIngredient(request: Request, ingredientId)
+GET     /user/:userId      controllers.HomeController.getOneUser(request: Request, userId)
+
+POST    /recepes             controllers.HomeController.crearRecepe(request: Request)
+POST    /ingredients             controllers.HomeController.crearIngredient(request: Request)
+POST    /users             controllers.HomeController.crearUser(request: Request)
+
+DELETE  /recepe/:recepeId      controllers.HomeController.deleteRecepe(request: Request, recepeId)
+DELETE  /ingredient/:ingredientId      controllers.HomeController.deleteIngredient(request: Request, ingredientId)
+DELETE  /user/:userId      controllers.HomeController.deleteUser(request: Request, userId)
+
+GET     /ingredient/nameRelated/:ingredientName      controllers.HomeController.getListIngredientesByNameSelected(request: Request, ingredientName)
+GET     /ingredient/nameLiteral/:ingredientName      controllers.HomeController.getIngredientesByNameLiteral(request: Request, ingredientName)
+
+
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

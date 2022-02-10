@@ -1,0 +1,7 @@
+@(listaIngredientes : List[Ingrediente])
+<listaIngredientes>
+    @for(variable <- listaIngredientes){
+
+        @_mi_parcialingredientes(variable)
+    }
+</listaIngredientes>

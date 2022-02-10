@@ -1,0 +1,9 @@
+@(variable: Ingrediente)
+
+
+
+<ingrediente>
+    <idIngrediente>@(variable.getIdIngrediente())</idIngrediente>
+    <nombreIngrediente>@(variable.getNombreIngrediente())</nombreIngrediente>
+</ingrediente>
+

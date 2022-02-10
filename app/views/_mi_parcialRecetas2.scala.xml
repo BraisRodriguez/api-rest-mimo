@@ -1,0 +1,10 @@
+@(variable: Receta)
+
+
+
+<receta>
+    <idReceta>@(variable.getIdReceta())</idReceta>
+    <nombreReceta>@(variable.getNombreReceta())</nombreReceta>
+    <descripcionReceta>@(variable.getDescripcionReceta())</descripcionReceta>
+</receta>
+

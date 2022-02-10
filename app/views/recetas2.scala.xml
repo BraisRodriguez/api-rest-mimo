@@ -1,0 +1,7 @@
+@(listaRecetas : List[Receta])
+<listaRecetas>
+    @for(variable <- listaRecetas){
+
+    @_mi_parcialRecetas(variable)
+    }
+</listaRecetas>

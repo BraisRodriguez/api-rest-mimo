@@ -1,0 +1,8 @@
+@(receta:Receta)
+        <?xml version="1.0" encoding="UTF-8"?>
+<receta>
+    <idReceta>@(receta.getIdReceta())</idReceta>
+    <nombreReceta>@(receta.getNombreReceta())</nombreReceta>
+    <descripcionReceta>@(receta.getDescripcionReceta())</descripcionReceta>
+    <listaIngredientes>@ingredientes(receta.getIngredientes())</listaIngredientes>
+</receta>
