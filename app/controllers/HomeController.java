@@ -6,6 +6,7 @@ import models.Ingrediente;
 import models.Receta;
 import models.RecetaData;
 import models.Usuario;
+import play.cache.SyncCacheApi;
 import play.data.Form;
 import play.data.FormFactory;
 import play.i18n.Messages;
@@ -17,6 +18,7 @@ import play.twirl.api.Content;
 import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * This controller contains an action to handle HTTP requests
@@ -29,6 +31,9 @@ public class HomeController extends Controller {
 
     @Inject
     MessagesApi messagesApi;
+
+    @Inject
+    private SyncCacheApi cache;
 
 
 
@@ -175,7 +180,20 @@ public class HomeController extends Controller {
 
     public Result getOneRecepe(Http.Request request, String recepeId) {
 
-        Receta receta = Receta.findRecetaById(recepeId);
+        Receta receta;
+        Optional<Receta> recetaCache  = cache.get("recepeId:"+recepeId);
+
+        Receta recetafromCache = recetaCache.orElse(null);
+        if(recetafromCache == null)
+        {
+            receta = Receta.findRecetaById(recepeId);
+            cache.set("recepeId:"+recepeId, receta);
+        }
+
+        else
+        {
+            receta = recetafromCache;
+        }
 
             if ( receta != null) {
 
@@ -211,7 +229,21 @@ public class HomeController extends Controller {
     public Result getOneIngredient(Http.Request request, String ingredientId) {
 
 
-        Ingrediente ingredieteFound = Ingrediente.findIngredienteById(Long.valueOf(ingredientId));
+        Ingrediente ingredieteFound;
+        Optional<Ingrediente> ingredienteCache  = cache.get("ingredientId:"+ingredientId);
+
+        Ingrediente ingredienteFromCache = ingredienteCache.orElse(null);
+        if(ingredienteFromCache == null)
+        {
+            ingredieteFound = Ingrediente.findIngredienteById(Long.valueOf(ingredientId));
+            cache.set("ingredientId:"+ingredientId, ingredieteFound);
+        }
+
+        else
+        {
+            ingredieteFound = ingredienteFromCache;
+        }
+
 
         if(ingredieteFound==null)
         {
@@ -249,7 +281,23 @@ public class HomeController extends Controller {
 
     public Result getOneUser(Http.Request request, String userId) {
 
-        Usuario usuario = Usuario.findUsuarioById(userId);
+        Usuario usuario;
+        Optional<Usuario> usuarioCache  = cache.get("userId:"+userId);
+
+        Usuario usuarioFromCache = usuarioCache.orElse(null);
+        if(usuarioFromCache == null)
+        {
+            usuario = Usuario.findUsuarioById(userId);
+            cache.set("userId:"+userId, userId);
+        }
+
+        else
+        {
+            usuario = usuarioFromCache;
+        }
+
+
+
 
         if ( usuario != null) {
 
@@ -756,6 +804,8 @@ public class HomeController extends Controller {
         }
 
     }
+
+    //lista recetas por usuario (por id)
 
 
 
