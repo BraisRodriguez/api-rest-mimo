@@ -18,3 +18,6 @@ error_no_se_encientran_ingredientes_con_ese_nombre=no se pueden encontrar ingred
 error_no_se_encuentra_ingrediente_con_ese_nombre_literal = no se pueden encontrar ingredientes con ese nombre
 error_no_se_encuentra_receta_con_ese_nombre_literal = no se pueden encontrar recetas con ese nombre
 error_pagina_no_existe = no existe esta pagina en esta lista
+error_pais = no puede ser nulo o estar vacio
+error_anoNacimento = no puede ser nulo o estar vacio
+error_rango_anoNacimiento = no puede ser inferior a 1900

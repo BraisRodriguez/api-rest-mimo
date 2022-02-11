@@ -44,6 +44,9 @@ public class Usuario extends Model {
     @WhenModified
     Timestamp whenModified;
 
+    @OneToOne(cascade=CascadeType.ALL)
+    private UserBio userBio;
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "usuario")
     @JsonManagedReference
     public List<Receta>recetas = new ArrayList<Receta>();
@@ -51,6 +54,7 @@ public class Usuario extends Model {
 
     public Usuario() {
     }
+
 
 
     public List<Receta> getRecetas() {
@@ -105,6 +109,14 @@ public class Usuario extends Model {
 
     public String getCorreoUsuario() {
         return correoUsuario;
+    }
+
+    public UserBio getUserBio() {
+        return userBio;
+    }
+
+    public void setUserBio(UserBio userBio) {
+        this.userBio = userBio;
     }
 
     public void setCorreoUsuario(String correoUsuario) {
