@@ -33,8 +33,10 @@ Seq[Any](format.raw/*2.1*/("""<usuario>
     <idUsuario>"""),_display_(/*3.17*/(usuario.getIdUsuario())),format.raw/*3.41*/("""</idUsuario>
     <nombreUsuario>"""),_display_(/*4.21*/(usuario.getNombreUsuario())),format.raw/*4.49*/("""</nombreUsuario>
     <correoUsuario>"""),_display_(/*5.21*/(usuario.getCorreoUsuario())),format.raw/*5.49*/("""</correoUsuario>
-    """),_display_(/*6.6*/recetas2(usuario.getRecetas())),format.raw/*6.36*/("""
-"""),format.raw/*7.1*/("""</usuario>"""))
+    """),_display_(/*6.6*/userBio(usuario.getUserBio())),format.raw/*6.35*/("""
+    """),_display_(/*7.6*/recetas2(usuario.getRecetas())),format.raw/*7.36*/("""
+
+"""),format.raw/*9.1*/("""</usuario>"""))
       }
     }
   }
@@ -51,9 +53,9 @@ Seq[Any](format.raw/*2.1*/("""<usuario>
               /*
                   -- GENERATED --
                   SOURCE: app/views/_mi_parcialUsuario.scala.xml
-                  HASH: ca222690e5513775ee5055e11a3f163d5e200485
-                  MATRIX: 915->1|1025->19|1077->45|1121->69|1180->102|1228->130|1291->167|1339->195|1386->217|1436->247|1463->248
-                  LINES: 27->1|32->2|33->3|33->3|34->4|34->4|35->5|35->5|36->6|36->6|37->7
+                  HASH: ca2c910a9544612a65527bd5ea5c4f60ccaa6045
+                  MATRIX: 915->1|1025->19|1077->45|1121->69|1180->102|1228->130|1291->167|1339->195|1386->217|1435->246|1466->252|1516->282|1544->284
+                  LINES: 27->1|32->2|33->3|33->3|34->4|34->4|35->5|35->5|36->6|36->6|37->7|37->7|39->9
                   -- GENERATED --
               */
           

@@ -1,5 +1,6 @@
 package models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.ebean.Finder;
 import io.ebean.Model;
@@ -28,6 +29,7 @@ public class UserBio extends Model {
     private Integer anoNacimiento;
 
     @OneToOne(mappedBy="userBio")
+    @JsonBackReference
     private Usuario usuarioPadre;
 
 
@@ -83,13 +85,6 @@ public class UserBio extends Model {
         return whenCreated;
     }
 
-    public Integer getAnoNacimiento() {
-        return anoNacimiento;
-    }
-
-    public void setAnoNacimiento(Integer anoNacimiento) {
-        this.anoNacimiento = anoNacimiento;
-    }
 
     public Usuario getUsuarioPadre() {
         return usuarioPadre;

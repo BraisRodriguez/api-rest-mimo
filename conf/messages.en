@@ -21,3 +21,4 @@ error_pagina_no_existe = this page doesn´t exist in this list
 error_pais = can´t be null or empty
 error_anoNacimento = can´t be null or empty
 error_rango_anoNacimiento = can´t be under 1900
+error_userId_propiedad_receta-2 = the creator user doesn´t exist

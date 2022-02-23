@@ -400,9 +400,8 @@ public class HomeController extends Controller {
         recetaFD.setNombreReceta(recetaF.getNombreReceta());
         recetaFD.setDescripcionReceta(recetaF.getDescripcionReceta());
         recetaFD.setIngredientes(recetaF.getIngredientes());
-        Usuario creador = Usuario.findUsuarioById(recetaF.getIdUsuario()) ;
 
-        if (creador == null || recetaF.getIdUsuario() == "") {
+        if (recetaF.getIdUsuario() == "" || recetaF.getIdUsuario() == null) {
             ObjectNode result = Json.newObject();
             Messages messages = messagesApi.preferred(request);
             String error = messages.at("error_userId_propiedad_receta");
@@ -410,6 +409,18 @@ public class HomeController extends Controller {
             return Results.status(400, result);
 
         }
+
+        Usuario creador = Usuario.findUsuarioById(recetaF.getIdUsuario()) ;
+
+        if (creador == null) {
+            ObjectNode result = Json.newObject();
+            Messages messages = messagesApi.preferred(request);
+            String error = messages.at("error_userId_propiedad_receta-2");
+            result.put("resultMessage", error);
+            return Results.status(400, result);
+
+        }
+
 
 
 

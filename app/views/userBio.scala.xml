@@ -1,0 +1,7 @@
+@(userBio:UserBio)
+
+<userBio>
+    <idUserBio>@(userBio.getIdUserBio())</idUserBio>
+    <pais>@(userBio.getPais())</pais>
+    <anoNacimiento>@(userBio.getAñoNacimiento())</anoNacimiento>
+</userBio>

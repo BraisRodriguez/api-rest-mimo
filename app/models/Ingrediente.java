@@ -139,6 +139,7 @@ public class Ingrediente extends Model {
 
 
         return finder.query()
+
                 .where()
                 .isNotNull("idIngrediente")
                 .orderBy("nombreIngrediente")

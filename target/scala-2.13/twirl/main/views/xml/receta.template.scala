@@ -29,13 +29,12 @@ object receta extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Xml
       {
 
 
-Seq[Any](format.raw/*2.1*/("""        """),format.raw/*2.9*/("""<?xml version="1.0" encoding="UTF-8"?>
-<receta>
-    <idReceta>"""),_display_(/*4.16*/(receta.getIdReceta())),format.raw/*4.38*/("""</idReceta>
-    <nombreReceta>"""),_display_(/*5.20*/(receta.getNombreReceta())),format.raw/*5.46*/("""</nombreReceta>
-    <descripcionReceta>"""),_display_(/*6.25*/(receta.getDescripcionReceta())),format.raw/*6.56*/("""</descripcionReceta>
-    <listaIngredientes>"""),_display_(/*7.25*/ingredientes(receta.getIngredientes())),format.raw/*7.63*/("""</listaIngredientes>
-</receta>"""))
+Seq[Any](format.raw/*2.1*/("""<receta>
+    <idReceta>"""),_display_(/*3.16*/(receta.getIdReceta())),format.raw/*3.38*/("""</idReceta>
+    <nombreReceta>"""),_display_(/*4.20*/(receta.getNombreReceta())),format.raw/*4.46*/("""</nombreReceta>
+    <descripcionReceta>"""),_display_(/*5.25*/(receta.getDescripcionReceta())),format.raw/*5.56*/("""</descripcionReceta>
+    """),_display_(/*6.6*/ingredientes(receta.getIngredientes())),format.raw/*6.44*/("""
+"""),format.raw/*7.1*/("""</receta>"""))
       }
     }
   }
@@ -52,9 +51,9 @@ Seq[Any](format.raw/*2.1*/("""        """),format.raw/*2.9*/("""<?xml version="1
               /*
                   -- GENERATED --
                   SOURCE: app/views/receta.scala.xml
-                  HASH: 67a295d72234fc0e1089c93bb4c0c7b0cb72ed40
-                  MATRIX: 902->1|1010->17|1044->25|1133->88|1175->110|1232->141|1278->167|1344->207|1395->238|1466->283|1524->321
-                  LINES: 27->1|32->2|32->2|34->4|34->4|35->5|35->5|36->6|36->6|37->7|37->7
+                  HASH: 2d434911dc377595cb4dd077ccf780c625f9fde4
+                  MATRIX: 902->1|1010->17|1060->41|1102->63|1159->94|1205->120|1271->160|1322->191|1373->217|1431->255|1458->256
+                  LINES: 27->1|32->2|33->3|33->3|34->4|34->4|35->5|35->5|36->6|36->6|37->7
                   -- GENERATED --
               */
           

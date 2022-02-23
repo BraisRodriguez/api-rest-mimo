@@ -21,3 +21,4 @@ error_pagina_no_existe = no existe esta pagina en esta lista
 error_pais = no puede ser nulo o estar vacio
 error_anoNacimento = no puede ser nulo o estar vacio
 error_rango_anoNacimiento = no puede ser inferior a 1900
+error_userId_propiedad_receta-2 = no existe el usuario creador

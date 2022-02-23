@@ -45,6 +45,7 @@ public class Usuario extends Model {
     Timestamp whenModified;
 
     @OneToOne(cascade=CascadeType.ALL)
+    @JsonManagedReference
     private UserBio userBio;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "usuario")

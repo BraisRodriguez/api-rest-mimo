@@ -3,5 +3,7 @@
     <idUsuario>@(usuario.getIdUsuario())</idUsuario>
     <nombreUsuario>@(usuario.getNombreUsuario())</nombreUsuario>
     <correoUsuario>@(usuario.getCorreoUsuario())</correoUsuario>
+    @userBio(usuario.getUserBio())
     @recetas2(usuario.getRecetas())
+
 </usuario>
