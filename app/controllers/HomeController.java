@@ -36,6 +36,9 @@ public class HomeController extends Controller {
     private SyncCacheApi cache;
 
 
+    public Result intro(){
+        return ok(views.html.index.render());
+    }
 
 
     public Result getAllRecepes(Http.Request request) {

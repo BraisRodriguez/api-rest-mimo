@@ -1,0 +1,41 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/play-java-hello-world-tutorial_2.13-1.0-SNAPSHOT-web-assets.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/play-request-response.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/play-request-response.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/stylesheets/main.css[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/stylesheets/main.css[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/external.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/external.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/compilation-error.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/compilation-error.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/header-pattern.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/header-pattern.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/favicon0.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/favicon0.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/request-response.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/request-response.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/stylesheets/prism.css[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/stylesheets/prism.css[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/hello-custom.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/hello-custom.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/javascripts/prism.js[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/javascripts/prism.js[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/play-stack.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/play-stack.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/play_icon_reverse.svg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/play_icon_reverse.svg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/hello-one.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/hello-one.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/play-components.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/play-components.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/javascripts[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/javascripts[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/javascripts/main.js[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/javascripts/main.js[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/stylesheets[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/stylesheets[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/favicon.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/favicon.png[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

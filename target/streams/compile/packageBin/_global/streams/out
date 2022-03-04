@@ -1,0 +1,159 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/play-java-hello-world-tutorial_2.13-1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	logback.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/logback.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	messages[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/messages[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/models[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models/RecetaData.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/models/RecetaData.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models/Ingrediente.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/models/Ingrediente.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models/Receta.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/models/Receta.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models/Usuario.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/models/Usuario.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models/UserBio.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/models/UserBio.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	messages.en[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/messages.en[0m
+[0m[[0m[0mdebug[0m] [0m[0m	application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	evolutions[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/evolutions[0m
+[0m[[0m[0mdebug[0m] [0m[0m	evolutions/default[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/evolutions/default[0m
+[0m[[0m[0mdebug[0m] [0m[0m	evolutions/default/1.sql[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/evolutions/default/1.sql[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Validators[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/Validators[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Validators/NoVacio.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/Validators/NoVacio.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	controllers[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/controllers[0m
+[0m[[0m[0mdebug[0m] [0m[0m	controllers/ReverseHomeController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/controllers/ReverseHomeController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	controllers/routes$javascript.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/controllers/routes$javascript.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	controllers/HomeController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/controllers/HomeController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	controllers/ReverseAssets.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/controllers/ReverseAssets.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	controllers/javascript[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/controllers/javascript[0m
+[0m[[0m[0mdebug[0m] [0m[0m	controllers/javascript/ReverseHomeController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/controllers/javascript/ReverseHomeController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	controllers/javascript/ReverseAssets.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/controllers/javascript/ReverseAssets.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	controllers/routes.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/controllers/routes.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/html[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/html[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/html/index.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/html/index.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/html/index$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/html/index$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/_mi_parcialUsuario.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/_mi_parcialUsuario.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/receta$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/receta$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/_mi_parcialRecetas2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/_mi_parcialRecetas2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/usuarios.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/usuarios.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/_mi_parcialingredientes$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/_mi_parcialingredientes$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/recetas2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/recetas2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/_mi_parcialUsuario$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/_mi_parcialUsuario$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/recetas$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/recetas$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/ingrediente$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/ingrediente$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/_mi_parcialRecetas2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/_mi_parcialRecetas2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/_mi_parcialingredientes.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/_mi_parcialingredientes.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/usuarios$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/usuarios$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/ingrediente.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/ingrediente.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/_mi_parcialRecetas.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/_mi_parcialRecetas.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/_mi_parcialRecetas$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/_mi_parcialRecetas$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/ingredientes.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/ingredientes.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/receta.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/receta.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/usuario.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/usuario.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/recetas.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/recetas.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/userBio$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/userBio$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/userBio.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/userBio.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/recetas2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/recetas2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/ingredientes$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/ingredientes$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	views/xml/usuario$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/views/xml/usuario$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	routes[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/routes[0m
+[0m[[0m[0mdebug[0m] [0m[0m	router[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/router[0m
+[0m[[0m[0mdebug[0m] [0m[0m	router/RoutesPrefix.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/router/RoutesPrefix.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	router/RoutesPrefix$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/router/RoutesPrefix$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	router/Routes$$anonfun$routes$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/router/Routes$$anonfun$routes$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	router/Routes.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/router/Routes.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/play-request-response.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/play-request-response.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/stylesheets/main.css[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/stylesheets/main.css[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/external.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/external.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/compilation-error.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/compilation-error.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/header-pattern.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/header-pattern.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/favicon0.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/favicon0.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/request-response.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/request-response.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/stylesheets/prism.css[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/stylesheets/prism.css[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/hello-custom.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/hello-custom.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/javascripts/prism.js[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/javascripts/prism.js[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/play-stack.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/play-stack.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/play_icon_reverse.svg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/play_icon_reverse.svg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/hello-one.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/hello-one.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/play-components.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/play-components.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/javascripts[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/javascripts[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/javascripts/main.js[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/javascripts/main.js[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/stylesheets[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/stylesheets[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/resources/webjars/play-java-hello-world-tutorial/1.0-SNAPSHOT/images/favicon.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/brais/Desktop/MASTER MIMO/CLOUD COMPUTING/API REST/proyectoRecetasPlay/last copy/play-samples-play-java-hello-world-tutorial/public/images/favicon.png[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

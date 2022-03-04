@@ -4,6 +4,8 @@
 
 # An example controller showing a sample home page
 #GET     /hola/:variable                           controllers.HomeController.index(variable)
+GET     /                           controllers.HomeController.intro()
+
 GET     /recepes               controllers.HomeController.getAllRecepes(request: Request)
 GET     /ingredients               controllers.HomeController.getAllIngredients(request: Request)
 GET     /users               controllers.HomeController.getAllUsers(request: Request)

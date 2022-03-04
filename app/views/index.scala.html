@@ -1,0 +1,68 @@
+@()
+
+
+
+@defining(play.core.PlayVersion.current) { version =>
+
+<section id="content">
+  <div class="wrapper doc">
+    <article>
+      <h1>WELCOME TO RECETASAPI REST</h1>
+      <p>This tutorial introduces the differentS request that can be thrown and what kind of response we get from them</p>
+
+      <h2>FUNCIONALITY OF THE SERVICES PROVIDED</h2>
+      <ul>
+        <li>GET     /     -->   this call will generate an html document in which you can see a quick guide of all you need to work with the API</li>
+
+        <li>GET     /recepes    -->   functionality: get back al the information about the recepes in JSON format or XML. By default it will shows the first page of the list, but you could use a query param to indicate the page you want to see like in this way (example: http://[path]:9000/recepes?page=2)</li>
+        <li>GET     /ingredients    -->   functionality: get back al the information about the ingredients in JSON format or XML. By default it will shows the first page of the list, but you could use a query param to indicate the page you want to see like in this way (example: http://[path]:9000/ingredients?page=2)</li>
+        <li>GET     /users    -->   functionality: get back al the information about the users that creates the ingredients in JSON format or XML. By default it will shows the first page of the list, but you could use a query param to indicate the page you want to see like in this way (example: http://[path]:9000/users?page=2)</li>
+
+        <li>GET     /recepe/:recepeId   -->   functionality: get back al the information about one specific recepe already created in JSON format or XML. You have to put the id of the recepe in the path</li>
+        <li>GET     /ingredient/:ingredientId   -->   functionality: get back al the information about one specific ingredient already created in JSON format or XML. You have to put the id of the recepe in the path</li>
+        <li>GET     /user/:userId   -->   functionality: get back al the information about one specific user already created in JSON format or XML. You have to put the id of the recepe in the path</li>
+
+        <li>POST    /recepes   -->   functionality: get back the information of the recepe you have just created in JSON format or XML. The information must be introduced un JSON format in the body of the request. It is obligatory to intoduce ingredients for the recepe. However this ingredients don´t have to exist before. If the ingredients don´t exist already, they will be creted. Moreover you have to assign to the recipe one user and this have to exist by that moment <p> BODY FORMAT --> {
+          "nombreReceta":"receta 86",
+          "descripcionReceta": "descripcion receta 86",
+          "ingredientes": [{
+
+          "nombreIngrediente": "ingrediente7"
+          },{
+
+          "nombreIngrediente": "ingrediente2"
+          }],
+          "idUsuario": "3"
+
+          }</p></li>
+        <li>POST    /ingredients   -->   functionality: get back the information of the ingredient you have just created in JSON format or XML. You also have to put the information in JSON format in the body of the reques<p>BODY FORMAT -->  {
+          "nombreIngrediente": "ingredient 2"
+          }</p></li>
+        <li>POST    /users   -->   functionality: get back the information of the user you have just created in JSON format or XML. You also have to put the information in JSON format in the body of the reques<p>BODY FORMAT  -->      {
+          "nombreUsuario": "Juanito2",
+          "correoUsuario": "juanito2gmail.com",
+          "userBio" :{
+          "pais":"Francia",
+          "añoNacimiento":2000
+          }
+          }</p></li>
+
+        <li>DELETE  /recepe/:recepeId   -->   functionality: this service don´t get back anything, only the corresponding code</li>
+        <li>DELETE  /ingredient/:ingredientId   -->   functionality: this service don´t get back anything, only the corresponding code</li>
+        <li>DELETE  /user/:userId   -->   functionality: this service don´t get back anything, only the corresponding code</li>
+
+        <li>GET     /ingredient/nameRelated/:ingredientName   -->   functionality: return a list of ingredients in JSON or XML format that have symilarities with the string or sentence added in the path. By default it will shows the first page of the list, but you could use a query param to indicate the page you want to see like in this way (example: http://[path]:9000/ingredient/nameRelated/:ingredientName?page=2)</li>
+        <li>GET     /ingredient/nameLiteral/:ingredientName   -->   functionality: return the ingredient information in JSON or XML format that that fits with that word or sentence added in the path</li>
+
+        <li>GET     /recepe/nameRelated/:recepeName   -->   functionality: return a list of recepes in JSON or XML format that have symilarities with the string or sentence added in the path. By default it will shows the first page of the list, but you could use a query param to indicate the page you want to see like in this way (example: http://[path]:9000/recepe/nameRelated/:recepeName?page=2)</li>
+        <li>GET     /recepe/nameLiteral/:recepeName   -->   functionality: functionality: return the ingredient information in JSON or XML format that that fits with that word or sentence added in the path</li>
+        <li>GET     /user/recepes/:userId   -->   functionality: get back al the information about al the recepes associated to an specific user in JSON format or XML. This list doesn´t have pages because in comparison with the full list of recepes, those that are created by one user will seem only a few</li>
+
+      </ul>
+
+    </article>
+
+  </div>
+</section>
+
+}

@@ -18,7 +18,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:19
+    // @LINE:21
     def deleteRecepe: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.deleteRecepe",
       """
@@ -28,7 +28,17 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:23
+    // @LINE:7
+    def intro: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.intro",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + """"})
+        }
+      """
+    )
+  
+    // @LINE:25
     def getListIngredientesByNameSelected: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.getListIngredientesByNameSelected",
       """
@@ -38,7 +48,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:28
+    // @LINE:30
     def getListaRecetasUsuario: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.getListaRecetasUsuario",
       """
@@ -48,7 +58,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:21
+    // @LINE:23
     def deleteUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.deleteUser",
       """
@@ -58,7 +68,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:12
+    // @LINE:14
     def getOneIngredient: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.getOneIngredient",
       """
@@ -68,7 +78,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:7
+    // @LINE:9
     def getAllRecepes: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.getAllRecepes",
       """
@@ -78,7 +88,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:8
+    // @LINE:10
     def getAllIngredients: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.getAllIngredients",
       """
@@ -88,7 +98,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:20
+    // @LINE:22
     def deleteIngredient: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.deleteIngredient",
       """
@@ -98,7 +108,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:13
+    // @LINE:15
     def getOneUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.getOneUser",
       """
@@ -108,7 +118,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:17
+    // @LINE:19
     def crearUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.crearUser",
       """
@@ -118,7 +128,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:11
+    // @LINE:13
     def getOneRecepe: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.getOneRecepe",
       """
@@ -128,7 +138,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:16
+    // @LINE:18
     def crearIngredient: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.crearIngredient",
       """
@@ -138,7 +148,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:24
+    // @LINE:26
     def getIngredienteByNameLiteral: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.getIngredienteByNameLiteral",
       """
@@ -148,7 +158,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:27
+    // @LINE:29
     def getListRecetaByNameLiteral: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.getListRecetaByNameLiteral",
       """
@@ -158,7 +168,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:15
+    // @LINE:17
     def crearRecepe: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.crearRecepe",
       """
@@ -168,7 +178,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:26
+    // @LINE:28
     def getListRecetasByNameSelected: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.getListRecetasByNameSelected",
       """
@@ -178,7 +188,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:9
+    // @LINE:11
     def getAllUsers: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.getAllUsers",
       """
@@ -190,7 +200,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:32
+  // @LINE:34
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -198,7 +208,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:32
+    // @LINE:34
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
