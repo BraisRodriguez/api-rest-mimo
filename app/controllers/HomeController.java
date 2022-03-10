@@ -554,9 +554,6 @@ public class HomeController extends Controller {
             return Results.status(406, result);
         }
 
-
-
-
     }
 
     public Result crearUser(Http.Request request) {
